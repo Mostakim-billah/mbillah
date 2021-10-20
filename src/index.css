@@ -58,7 +58,7 @@ nav{
     border-bottom-right-radius: 50%;
 }
 .text_div h1{
-   font-size: 5rem;
+   font-size: 6rem;
 }
 .text_div h1 span{
     color: #1b92ad;
@@ -69,6 +69,9 @@ nav{
 @media screen and ( max-width : 976px) {
     .text_div {
         text-align: center;
+     }
+     .text_div h1{
+        font-size: 5rem;
      }
 }
 .home__btn{
@@ -113,13 +116,15 @@ nav{
     position: relative;
     display:block;
     cursor: pointer;
+    width: 100%;
     
 }
 .Img___div img{
     position: relative;
+    width: 100%;
     display:block !important;
 }
-.Blur___{
+/* .Blur___{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -133,11 +138,10 @@ nav{
     align-items: center;
     text-align: center;
     transition: 0.3s;
-    filter: blur(1px);
     visibility: hidden;
     transition: 0.3s;
-    filter: blur(3px);
-}
+    overflow: hidden !important;
+} */
 .Img___div span{
     position: absolute;
     top: 80%;
@@ -146,9 +150,13 @@ nav{
     color: #fff;
     transition: 0.3s;
     visibility: hidden;
+    overflow: hidden !important;
+    opacity: 1 !important;
 }
-.Img___div:hover .Blur___{
-    visibility: visible;
+.Img___div:hover{
+    opacity: 0.8;
+    transition:0.3s;
+    
 }
 .Img___div:hover span{
     top: 50%;
@@ -157,6 +165,12 @@ nav{
 .Prot___fulio{
     color: #fff;
     text-decoration: none;
+    transition: 0.3s;
+    
+}
+.Prot___fulio:hover{
+    color:#000;
+    
 }
 
 /* -------------------- protfulio ecommerce ------------------------ */
@@ -378,6 +392,7 @@ nav{
 .footer{
     position: relative;
     overflow: hidden;
+   
 }
 .footer____ div ul{
     list-style: none;
@@ -389,6 +404,7 @@ nav{
     border:1px solid #1b92ad;
     margin-top:8px;
     transition: 0.5s;
+    margin-top: 5rem !important;
 }
 .footer____ div ul li .footer__icon .f__icon{
     font-size: 2.5rem;
@@ -401,4 +417,22 @@ nav{
 }
 .footer____ div ul li:hover .footer__icon .f__icon{
     color: #fff;
+}
+.home__view{
+    display: none;
+}
+@media screen and ( max-width : 575px) {
+    .home__view{
+        display: block;
+    }
+}
+@media screen and ( max-width : 768px) {
+    .home__view2{
+        display: block;
+    }
+}
+@media screen and ( max-width : 1024px) {
+    .home__view3{
+        display: block;
+    }
 }
